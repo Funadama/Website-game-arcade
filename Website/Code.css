@@ -1,0 +1,127 @@
+:root {
+    --background-color: rgb(5, 10, 24);
+    --border-color: rgb(255, 255, 255, 0.1);
+    --text-color: rgb(116, 112, 131)
+  }
+  
+  body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+  }
+  
+  * {
+      box-sizing: border-box;
+  }
+  
+  h1, a, h2, h3, p, span {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  
+
+  
+  nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  nav > .nav-section {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #nav-logo-section {
+    justify-content: flex-start;
+    font-size: 2.5rem;
+  }
+  
+  #nav-logo-section,
+  #nav-link-section {
+    flex-basis: calc(100% / 3)
+  }
+  
+  #nav-social-section,
+  #nav-contact-section {
+    flex-grow: 1;
+  }
+  
+  #nav-link-section {
+    gap: 6rem;
+  }
+  
+  #nav-social-section {
+    gap: 3rem;
+  }
+  
+  main {
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  main > article {
+   display: grid;
+   height: 100%;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 2fr 1fr;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+  }
+  
+  main > article > .article-section {
+   height: 100%;
+  }
+  
+  main > article > .article-descripion-section,
+  main > article > .article-nav-section {
+     border-left: 1px solid var(--border-color);
+  }
+  
+  main > article > .article-title-section,
+  main > article > .article-nav-section {
+     border-top: 1px solid var(--border-color);
+  }
+    
+  
+  main > article  > .article-image-section > img{
+    width: 67vw;
+    height: 56vh;
+  }
+
+  h1 {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Sequel100, sans-serif;
+    font-size: 4.4rem;
+    line-height: 88%;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+  }
+
+  main > article > .article-nav-section{
+    align-items: center;
+    justify-content: center;
+    
+    display: flex;
+    gap: 15px;
+    
+  }
+  
+  main > article > .article-nav-section > img{
+    width: 90px;
+  }
+  main > article > .article-nav-section > img.arrowL{
+    transform: scaleX(-1);
+  }
