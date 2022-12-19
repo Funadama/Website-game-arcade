@@ -1,0 +1,10 @@
+canvas {
+    border: 1px solid rgb(212, 183, 183);
+  }
+  
+  body {
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }

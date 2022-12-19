@@ -125,3 +125,8 @@
   main > article > .article-nav-section > img.arrowL{
     transform: scaleX(-1);
   }
+
+  main > article > .article-nav-section > img:hover{
+    cursor: pointer;
+  }
+ 
